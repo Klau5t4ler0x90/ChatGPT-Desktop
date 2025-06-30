@@ -13,6 +13,8 @@ The app uses persistent sessions so your login and chat history are preserved ac
 * Manual session-token injection supported (as backup)
 * User session safely stored in a dedicated profile
 * Portable and cross-platform (Linux, Windows, macOS)
+* Download logo and use as app icon
+* Create a Linux desktop app shortcut
 
 ## Installation
 
@@ -66,6 +68,8 @@ If no token is provided, you can log in via the built-in web interface, and your
 
 The app icon is loaded from the `icon.png` file in the project root. You can replace this file with your own 512x512 `.png` to customize the look.
 
+You can download a logo from the web or create your own and save it as `icon.png` in the project root.
+
 ## Optional: Linux Desktop Integration
 
 You can create a `.desktop` launcher in:
@@ -94,6 +98,13 @@ chmod +x ~/.local/share/applications/chatgpt-desktop.desktop
 
 The app will now appear in your application menu.
 
+Add it to desktop:
+
+```bash
+cp ~/.local/share/applications/chatgpt-desktop.desktop ~/Desktop/
+chmod +x ~/Desktop/chatgpt-desktop.desktop
+```
+
 ## Cross-Platform
 
 The project is designed to work on:
@@ -104,3 +115,6 @@ The project is designed to work on:
 
 Note: On Linux, you may need to run with the `--no-sandbox` flag or configure `chrome-sandbox` permissions.
 
+## License
+
+MIT License
