@@ -118,3 +118,7 @@ Note: On Linux, you may need to run with the `--no-sandbox` flag or configure `c
 ## License
 
 MIT License
+
+If you like my scripts:
+
+[!["Buy Me A Coffee"](https://www.buymeacoffee.com/assets/img/custom_images/orange_img.png)](https://www.buymeacoffee.com/klau5t4ler0x90)
