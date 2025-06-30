@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <title>Session Token Eingeben</title>
+</head>
+<body style="background-color:#343541; color:#fff; display:flex; flex-direction:column; align-items:center; justify-content:center; height:100vh; font-family:sans-serif;">
+  <h2>Session Token eingeben</h2>
+  <input id="tokenInput" type="text" placeholder="Session Token" style="width:300px; padding:10px;"/>
+  <button id="saveButton" style="padding:10px; margin-top:10px;">Speichern und neu starten</button>
+
+  <script>
+    const saveButton = document.getElementById('saveButton');
+    saveButton.addEventListener('click', () => {
+      const token = document.getElementById('tokenInput').value.trim();
+      if (token) {
+        window.electronAPI.saveToken(token);
+      }
+    });
+  </script>
+</body>
+</html>
