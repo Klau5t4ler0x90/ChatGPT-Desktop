@@ -1,0 +1,12 @@
+{
+  "name": "chatgpt-desktop",
+  "version": "1.0.0",
+  "description": "ChatGPT Desktop App mit Session Token",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron . --no-sandbox"
+  },
+  "devDependencies": {
+    "electron": "^30.0.0"
+  }
+}
